@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: #333;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left a {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}

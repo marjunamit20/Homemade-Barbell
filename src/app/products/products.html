@@ -1,0 +1,24 @@
+<div class="filter">
+  <button (click)="setCategory('All')">All</button>
+  <button (click)="setCategory('Small')">Small</button>
+  <button (click)="setCategory('Medium')">Medium</button>
+  <button (click)="setCategory('Large')">Large</button>
+</div>
+
+<div class="products">
+  <div class="product-card" *ngFor="let item of filteredProducts">
+
+    <img [src]="item.image" alt="{{ item.name }}">
+
+    <h3>{{ item.name }}</h3>
+
+    <p>{{ item.description }}</p>
+
+    <p class="price">₱{{ item.price }}</p>
+
+    <button (click)="addToCart(item)">
+      Buy Now
+    </button>
+
+  </div>
+</div>
